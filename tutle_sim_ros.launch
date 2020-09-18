@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="turtle_init" default="false"/>
+    <!-- d -->
+    <node 
+        if="$(arg turtle_init)"
+        pkg="turtlesim" 
+        type="turtlesim_node" 
+        name="trtl" 
+    
+    />
+
+    <!--node pkg="turtlesim" 
+        type="turtlesim_node" 
+        name="trtl" 
+    /-->
+</launch>
